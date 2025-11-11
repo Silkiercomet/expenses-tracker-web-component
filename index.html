@@ -11,9 +11,11 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+    </style>
     <title>Frontend Mentor | Expenses chart component</title>
-
+    <link rel="stylesheet" href="style.css" />
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
       .attribution {
@@ -31,10 +33,15 @@
         <h1>My balance <label>$921.48</label></h1>
         <img src="images/logo.svg" alt="logo" />
       </header>
-      <section>
+      <section class="main_container">
         <h2>Spending - Last 7 days</h2>
         <figure class="chart">
-          <ul class="chart_list"></ul>
+          <ul class="chart_list">
+            <li>
+              <div></div>
+              <span>day</span>
+            </li>
+          </ul>
           <table class="chart_table">
             <caption>
               Spending - Last 7 days
@@ -50,11 +57,11 @@
         </figure>
         <footer>
           <div>
-            <h3>Total this month</h3>
-            <span>$478.33</span>
+            <span>Total this month</span>
+            <h3>$478.33</h3>
           </div>
           <div>
-            <span>+2.4%</span>
+            <h4>+2.4%</h4>
             <span>from last month</span>
           </div>
         </footer>
@@ -67,5 +74,6 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
