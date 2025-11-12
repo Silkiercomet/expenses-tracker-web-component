@@ -48,9 +48,10 @@ function renderData() {
     // 2. Lógica para crear y agregar elementos a la lista del gráfico (ul)
     const listItem = document.createElement('li');
     // El alto de la barra será el monto multiplicado por 3 (para mejor visualización) + 30px
-    const barHeight = item.amount * 3 + 30; 
+    const barHeight = item.amount * 2.5 + 30; 
     listItem.innerHTML = `
-      <div style="height: ${barHeight}px;"></div>
+      <div class="pop">$${item.amount}</div>
+      <div style="height: ${barHeight}px;" class="bar"></div>
       <span>${item.day}</span>
     `;
     chartList.appendChild(listItem);
